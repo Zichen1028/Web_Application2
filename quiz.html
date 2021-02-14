@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" >
+  <meta name="description" content="Assignment-Part 2 quiz page" />
+  <meta name="keywords" content="quiz page" />
+  <meta name="author" content="Zichen Wu"  />
+  <title>Assignment Part 2 - Quiz</title>
+  <link href= "styles/style.css" rel="stylesheet"/>
+</head>
+<body id="quiz">
+<header>
+    <h1>JavaScript JSON</h1>
+</header>
+<nav>
+  <p class="nav"><a href="index.html">Home</a></p>
+  <p class="nav"><a href="topic.html">JSON (Javascript)</a></p>
+  <p class="nav"><a href="quiz.html">Quiz</a></p>
+  <p class="nav"><a href="result.html">Result</a></p> 
+  <p class="nav"><a href="enhancements.html">Extra</a></p>
+  <p class="nav"><a href="enhancements2.html">Extra2</a></p>
+</nav>
+<article>
+<h2>A Simple Quiz</h2>
+<p>Austrlian Eastern Standard Time (AEST): </p>
+<div id="time"></div>
+<p>Quiz Time Left (second):</p>
+<div id="timing"></div>
+<hr>
+<form id="form" method="post" action="result.html">
+<fieldset>
+    <legend>Student Details</legend>
+    <p><label for="first_name">First Name</label>
+        <input type="text" name="first_name" id="first_name"/>
+    </p>
+    <p><label for="last_name">Last Name</label>
+        <input type="text" name="last_name" id="last_name"/>
+    </p>
+    <p><label for="stuno">Student ID:</label>
+       <input type="text" name="student_number" id="stuno"/>
+    </p>
+</fieldset>
+<fieldset>
+    <legend>Basic Points</legend>
+    <fieldset>
+        <label for="q1">Question 1: Write down the full name of JSON.</label><br>
+        <textarea name="q1"  rows="1" cols="40" id="q1"></textarea>
+    </fieldset>
+    <fieldset>
+        <legend>Question 2: Which one is faster?</legend>
+        <label for="JSON">JSON</label>
+        <input type="radio" name="q2" value="JSON" id="JSON"/>
+        <br/>
+        <label for="XML">XML</label>
+        <input type="radio" name="q2" value="XML" id="XML"/>
+    </fieldset>
+    <fieldset>
+        <legend>Question 3: Some general use cases of JSON include:</legend>
+        <label for="storing">Storing data</label>
+            <input type="checkbox" name="q3" value="storing" id="storing"/>
+        <br/>
+        <label for="generating">Generating data structures from user input</label>
+            <input type="checkbox" name="q3" value="generating" id="generating"/>
+        <br/>
+        <label for="transferring">Transferring data from server to client, client to server, and server to server</label>
+            <input type="checkbox" name="q3" value="transferring" id="transferring"/>
+        <br/>
+        <label for="verifying">Configuring and verifying data</label>
+            <input type="checkbox" name="q3" value="verifying" id="verifying"/>
+    </fieldset>
+</fieldset>
+<fieldset>
+    <legend>Advanced Points</legend>
+    <fieldset>
+        <legend>Question 4: JSON data is separated by what symbol?</legend>
+        <label for="q4"></label>
+        <input type="text" name="q4" id="q4"/>
+    </fieldset>
+    <fieldset>
+        <legend>Question 5: Who is the father of JSON?</legend>
+        <label for="father"></label>
+        <select name="father" id="father">
+            <option value="none" selected="" disabled="">Please Select</option>
+            <option value="Douglas Crockford">Douglas Crockford</option>
+            <option value="Dennis Ritchie">Dennis Ritchie</option>
+            <option value="Tim Berners-Lee & Daniel W. Connolly">Tim Berners-Lee & Daniel W. Connolly</option>
+        </select>
+        <br/>
+    </fieldset>
+</fieldset>
+
+<input type="submit" value="Submit" id="submit"/>
+<input type="reset" value="Reset Form"/>
+
+</form>
+</article>
+<footer>
+<p><a href="mailto:102849551@student.swin.edu.au" title="Send email">Send Email</a></p>
+</footer>
+<script src="scripts/jquery-3.5.1.js"></script><!--jQuery library-->
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.19.2/jquery.validate.js"></script><!--CDN link of the Jquery Validatior-->
+<script src="scripts/quiz.js"></script>
+<script src="scripts/enhancements.js"></script>
+</body>
+</html>

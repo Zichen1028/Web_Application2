@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" >
+  <meta name="description" content="Assignment-Part 1 enhancements page" />
+  <meta name="keywords" content="enhancements page" />
+  <meta name="author" content="Zichen Wu"  />
+  <title>Assignment Part 1 - Enhancements</title>
+
+  <link href= "styles/style.css" rel="stylesheet"/>
+</head>
+<body>
+<header>
+    <h1>JavaScript JSON</h1>
+</header>
+<nav>
+    <p class="nav"><a href="index.html">Home</a></p>
+    <p class="nav"><a href="topic.html">JSON (Javascript)</a></p>
+    <p class="nav"><a href="quiz.html">Quiz</a></p>
+    <p class="nav"><a href="result.html">Result</a></p> 
+    <p class="nav"><a href="enhancements.html">Extra</a></p>
+    <p class="nav"><a href="enhancements2.html">Extra2</a></p>
+</nav>
+
+<article>
+    <h2>Enhancement 1: An Approach to Center the Picture in the Div</h2>  
+    <section class="justify">
+      <h3>Description</h3>
+      <p>Picture insertion is a common approach to add a picture or figure on the webpage. 
+        Ideally, each picture is positioned in the center and looks appropriate. However, 
+        the thing may not be so easy when there are margins, padding and borders. The image 
+        often places unproperly, even beyond the box. </p>
+      <p>There is an approach to make the picture place centered and always inside the aside 
+        area, whatever horizontally or vertically, no matter the browser zooms in or out. 
+        Firstly, there should be two levels of boxes. The first level box is marked as parentBox, 
+        then transfer it to 'table', and the box of the second level is set as 'table cell'. 
+        To make the picture place in the center, set text-align as center in the parentBox and 
+        set vertical-align as middle in the second level box.</p>
+    </section>  
+    <section class="justify">
+      <h3>Code</h3>
+      <p>
+        .parentBox {<br />
+          width: 200px;<br />
+          height: 200px;<br />
+          display: table;<br />
+          text-align: center;<br />
+        }
+      </p>
+      <p>
+        .box{<br />
+          display: table-cell;<br />
+          vertical-align: middle;<br />
+        }
+      </p>
+    </section>
+    <section>
+      <h3>Citation</h3>
+      <p>Lockloke 2019, <em>The way to center a picture</em>, CSDN, viewed 30 Aug 2020, <a href="https://blog.csdn.net/weixin_41654160/article/details/89213856?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522159877763819725211911853%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=159877763819725211911853&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_ecpm_v3~rank_business_v1-2-89213856.ecpm_v3_rank_business_v1&utm_term=html%E5%9B%BE%E7%89%87%E5%B1%85%E4%B8%AD&spm=1018.2118.3001.4187">&lt;https://blog.csdn.net/weixin_41654160/article/details/89213856?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522159877763819725211911853%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=159877763819725211911853&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_ecpm_v3~rank_business_v1-2-89213856.ecpm_v3_rank_business_v1&utm_term=html%E5%9B%BE%E7%89%87%E5%B1%85%E4%B8%AD&spm=1018.2118.3001.4187&gt;.</a></p>
+    </section>
+    <section>
+      <h3>Hyperlink</h3>
+      <p><a href="topic.html#aside">Please click here to refer.</a></p>
+    </section>
+
+    <h2>Enhancement 2: Image Map</h2>
+    <section class="justify">
+      <h3>Description</h3>
+      <p>The image map can set several clickable areas in a single image by map and area tags. 
+        In this assignment, the image map is implemented in the image that is inserted in the aside part. 
+        Firstly, tag &lt;map&gt; is set, and the attribute 'name' is set as imagemap which can be referred. 
+          Secondly, the attribute area shape is set as 'rect'. Then, measured coordinate values are added. 
+          These four values refer to x, y, x + width, y + height. Finally, put the hyperlink of two 
+          pictures which links to JSON and JAVA.</p>
+    </section>
+    <section class="justify">
+      <h3>Code</h3>
+      <p>&lt;map name="imagemap"&gt;<br />
+        &lt;area shape="rect" coords="56,121,306,234" href="./images/JSON.jpg"/&gt;<br />
+        &lt;area shape="rect" coords="483,65,621,272" href="./images/java.png"/&gt;<br />
+        &lt;/map&gt;<br />
+        &lt;img src="./images/aside.png" usemap="#imagemap"/&gt;<br />
+      </p>
+    </section>
+    <section>
+      <h3>Citation</h3>
+      <p>Chidre'sTechTutorials 2016, <em>HTML video tutorial - 45 - html image map</em>, Youtube, viewed 30 Aug 2020, <a href="https://www.youtube.com/watch?v=6PMgqzGGDRU">&lt;https://www.youtube.com/watch?v=6PMgqzGGDRU&gt;.</a></p>
+    </section>
+    <section>
+      <h3>Hyperlink</h3>
+      <p><a href="topic.html#aside">Please click here to refer.</a></p>
+    </section>
+</article>
+<footer>
+<p><a href="mailto:102849551@student.swin.edu.au" title="Send email">Send Email</a></p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" >
+  <meta name="description" content="Assignment-Part 1 topic page" />
+  <meta name="keywords" content="topic page" />
+  <meta name="author" content="Zichen Wu"  />
+  <title>Assignment Part 1 - Topic</title>
+
+  <link href= "styles/style.css" rel="stylesheet"/>
+</head>
+
+<body>
+<header>
+  <h1>JavaScript JSON</h1>
+</header>
+<nav>
+  <p class="nav"><a href="index.html">Home</a></p>
+  <p class="nav"><a href="topic.html">JSON (Javascript)</a></p>
+  <p class="nav"><a href="quiz.html">Quiz</a></p>
+  <p class="nav"><a href="result.html">Result</a></p> 
+  <p class="nav"><a href="enhancements.html">Extra</a></p>
+  <p class="nav"><a href="enhancements2.html">Extra2</a></p>
+</nav>
+
+<article>
+  <h2>What is JSON?</h2>
+  <section class="justify">
+    <h2>Definition</h2>
+    <p>JSON (JavaScript Object Notation) is a format that exchanges data in a lightweight way. 
+      Based on a subset of the JavaScript Programming Language Standard ECMA-262 3rd Edition, 
+      JSON is completely language independent. However, it uses conventions which is similar to 
+      the C-family languages, such as C, C++, C#, JavaScript, Perl and Python. All these features 
+      let JSON become an ideal data-interchange language.</p>
+  </section> 
+  <aside class="parentBox" id="aside">
+    <div class="box">
+      <map name="imagemap">
+        <area shape="rect" coords="56,121,306,234" href="./images/JSON.jpg" alt="Photo of JSON" title="Filesize 77kb "/>
+        <area shape="rect" coords="483,65,621,272" href="./images/java.png" alt="Photo of JAVA" title="Filesize 10kb "/>
+      </map>
+      <img src="./images/aside.png" usemap="#imagemap" alt="Photo of aside" title="Filesize 13kb "/>
+    <p>Feature: Easy for machines to parse and generate!</p>
+    </div>
+  </aside>
+  <section id="lists">
+    <h2>Lists of JSON'S Usage</h2>
+      <section>
+      <h3>JSON Syntax Rules<sup>[1]</sup></h3>
+      <ol>
+        <li>Data is in name/value pairs</li>
+        <li>Data is separated by commas</li>
+        <li>Curly braces hold objects</li>
+        <li>Square brackets hold arranges</li>
+      </ol>
+      </section>
+      <section>
+        <h3>JSON natively supports:</h3>
+        <ul>
+          <li><strong>Strings</strong></li>
+          <li><strong>Numbers</strong>
+          <p>Numbers can be in any format whether they're decimal numbers whole numbers negative numbers even scientific notation numbers.</p>
+          </li>
+          <li><strong>booleans</strong>
+          <p>Booleans can be either true or false.</p>
+          </li>
+          <li><strong>Null</strong>
+          <p>Null essentially stands for nothing.</p>
+          </li>
+          <li><strong>Arrays</strong>
+          <p>Arrays can be a list of any of the tyes above.</p>
+          </li>
+          <li><strong>Objects</strong>
+          <p>An object is the most complex but most used type within JSON as it allows you to represent data that are key-value pairs.</p>
+          </li>
+        </ul>
+      </section>
+  </section>
+  <section class="justify">
+    <h2>JSON in JavaScript</h2>
+    <p>Because JSON derives from JavaScript, you can parse a JSON string simply by invoking the eval() function. 
+      The JSON string needs to be wrapped by parenthesis, else it will not work! This is the #1 problem when 
+      programmers first start to manipulate JSON strings. That being said, DON'T do this!<sup>[2]</sup></p>
+  </section>
+  <section id="table">
+    <h2>Table</h2>
+    <table>
+      <caption>JSON VS XML</caption>
+      <tr>
+        <th>Language</th>
+        <th>Self Describing</th> 
+        <th>End Tag</th>
+        <th>Length</th>
+        <th>Arrays Use</th>
+      </tr>
+      <tr>
+        <td>JSON</td>
+        <td>y</td>
+        <td>N</td>
+        <td>Shorter</td>
+        <td>Y</td>
+      </tr>
+      <tr>
+        <td>XML</td>
+        <td>Y</td>
+        <td>Y</td>
+        <td>Longer</td>
+        <td>N</td>
+      </tr>
+    </table>
+  </section>
+  <section class="justify">
+    <h2>Conclusion</h2>
+    <p>JSON is a natural format to use in JavaScript and has many implementations available 
+      for use in many popular programming languages. Because it is lightweight and is readily 
+      transferred between programming languages and systems, JSON has been experiencing increased 
+      support in APIs, including the Twitter API<sup>[3]</sup>.</p>
+  </section>
+  <section id="footnotes">
+    <h2>References</h2>
+    1. Ghahrai, A 2020, <em>JSON Tutorial - Learn How to Use JSON with JavaScript</em>, DevQA, viewed 28 Aug 2020, &lt;<a href="https://devqa.io/json-tutorial-how-to-use-json-in-javascript/">https://devqa.io/json-tutorial-how-to-use-json-in-javascript/</a>&gt;.<br />
+    2. freeformatter 2020, <em>JSON in JavaScript</em>, freeformatter, viewed 29 Aug 2020, &lt;<a href="https://www.freeformatter.com/json-formatter.html">https://www.freeformatter.com/json-formatter.html</a>&gt;.<br />
+    3. Tagliaferri, L 2016, <em>How To Work with JSON in JavaScript</em>, digitalocean, viewed 28 Aug 2020, &lt;<a href="https://www.digitalocean.com/community/tutorials/how-to-work-with-json-in-javascript">https://www.digitalocean.com/community/tutorials/how-to-work-with-json-in-javascript</a>&gt;.<br />
+  </section>
+</article>
+
+
+<footer>
+<p><a href="mailto:102849551@student.swin.edu.au" title="Send email">Send Email</a></p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" >
+  <meta name="description" content="Assignment-Part 2 result page" />
+  <meta name="keywords" content="result page" />
+  <meta name="author" content="Zichen Wu"  />
+  <title>Assignment Part 2 - Result</title>
+  <link href= "styles/style.css" rel="stylesheet"/>
+</head>
+<body id="result">
+<header>
+  <h1>JavaScript JSON</h1>
+</header>
+<nav>
+  <p class="nav"><a href="index.html">Home</a></p>
+  <p class="nav"><a href="topic.html">JSON (Javascript)</a></p>
+  <p class="nav"><a href="quiz.html">Quiz</a></p>
+  <p class="nav"><a href="result.html">Result</a></p> 
+  <p class="nav"><a href="enhancements.html">Extra</a></p>
+  <p class="nav"><a href="enhancements2.html">Extra2</a></p>
+</nav>
+<article>
+  <h2>Result</h2>
+  <p>First Name: <span id="firstname"></span></p>
+  <p>Last Name: <span id="lastname"></span></p>                 
+  <p>Student ID: <span id="stuno"></span></p>                 
+  <p>Score: <input type="text" id="score" readonly></p>
+  <p>Number of Attempt: <input type="text" id="attempt" readonly></p>
+  <div id="tryagain"></div>
+  <div id="Zero"></div>
+</article>
+<footer id="footer">
+<p><a href="mailto:102849551@student.swin.edu.au" title="Send email">Send Email</a></p>
+</footer>
+<script src="scripts/jquery-3.5.1.js"></script><!--jQuery library-->
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.19.2/jquery.validate.js"></script><!--CDN link of the Jquery Validatior-->
+<script src="scripts/quiz.js"></script>
+<script src="scripts/enhancements.js"></script>
+</body>
+</html>
